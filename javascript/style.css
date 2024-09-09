@@ -1,0 +1,81 @@
+.navbar{
+      background-color: rgb(56, 2, 64);
+      display: flex;
+      justify-content: center;
+      height:80px;
+
+}
+.navbar h1{
+      list-style-type:  none;
+      color: aliceblue;
+      font-style: 'Baloo Bhaijaan';
+}
+.game{
+      display: grid;
+      grid-template-columns: repeat(3,10vw);
+      grid-template-rows: repeat(3,10vw);
+      position: relative;
+
+}
+.mainContainer{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+
+
+}
+.btn{
+      border: 2px solid black;
+      font-size: 6vw;
+      background-color: white;
+}
+.btn:hover{
+      background-color: rgb(219, 217, 220);
+}
+
+.about{
+      padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin-top: 34px;
+}
+img{
+      width: 0;
+      transition: width 2s ease-in-out;
+}
+.br-0{
+      border-right: 0;
+}
+.bl-0{
+      border-left: 0;
+}
+.bt-0{
+      border-top: 0;
+}
+.bb-0{
+      border-bottom: 0;
+}
+.info{
+      font-size: 25px;
+}
+.reset{
+      font-size: 20px;
+      background-color:rgb(56, 2, 64);
+      color: aliceblue;
+      cursor: pointer;
+      font-family: 'baloo bhaina 2';
+      border-radius: 8px;
+}
+.about h1{
+      font-size: 2rem;
+      color: rgb(56, 2, 64);
+}
+@media screen and (max-width: 950px)
+{
+    .mainContainer{
+        flex-wrap: wrap;
+    }
+    .game { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+}
